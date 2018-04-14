@@ -1,0 +1,128 @@
+.background{
+
+}
+
+	.b1{
+		position:absolute;
+    /*display: inline-block;*/
+    width: 100%;
+    height: auto;
+    opacity:0.9;
+		left:0;
+	  top:0;
+}
+
+.share{
+	position:absolute;
+	left:5px;
+	z-index: 2;
+	top:10px;
+}
+
+.share img{
+	width:50px;
+	height:50px;
+	margin:8px;
+	border-radius: 20px;
+
+	/*box-shadow: 1px 1px 16px ;*/
+}
+
+.share img:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.logo{
+	font-family:"BEBAS___" ;
+	font-size: 70px;
+	weight:auto;
+	position:absolute;
+	top:40%;
+	left:10%;
+}
+
+.heading{
+	position:absolute;
+	top:70%;
+	left:10%;
+	color:white;
+	font-size: 30px;
+	font-family:helvetica;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgb(36,30,25);
+	opacity:0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.7s ease;
+
+}
+
+.menuicon{
+	position: absolute;
+	right:5%;
+	top:5%;
+	font-size:50px;
+	height:70px;
+	width:80px ;
+	background-color: grey;
+	opacity: 0.8;
+	color:white;
+	text-align: center;
+}
+
+
+.menuicon:hover+.overlay {
+  width: 28%;
+  left: 72%;
+}
+.overlay:hover{
+	width: 28%;
+  left: 72%;
+}
+@font-face {
+    font-family:"BEBAS___" ;
+    src: url("BEBAS___.ttf") ;
+}
+
+.menu{
+	position: relative;
+	text-align:center;
+	font-family:"BEBAS___";
+	top:10%;
+	color:white;
+	cursor:auto;
+}
+.menu a{
+
+	text-align:center;
+	font-family:"BEBAS___";
+	color:white;
+	font-size:36px;
+	cursor:auto;
+	text-decoration: none;
+}
+.overlay a:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+
+@media (max-width: 100% max-height:100%) {
+  .b1 {
+		height:100%;
+    width: 100%;
+  }
+	.overlay {
+		height:100%;
+    width: 100%;
+  }
+
+}
