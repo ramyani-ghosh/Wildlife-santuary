@@ -1,40 +1,117 @@
 
   body{
-    background-color: #261d0b;
+    background-color: #0c0b0a;
   }
   @font-face {
       font-family:"BEBAS___" ;
       src: url("BEBAS___.ttf") ;
   }
-  #text {
-    position: fixed;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:60px;
-    color:white;
 
-  }
-  #text pre{
-    font-family:"BEBAS___" ;
-  }
   #background{
     position: absolute;
     top:0;
     left:0;
-    opacity: 0.25;
+    opacity: 0.15;
     height:120%;
     width:100%;
+    z-index:-2;
 
   }
   .home{
     position:fixed;
     top:1%;
-    right:0.6%;
-    height:80px;
-    width:78px;
+    right:0.3%;
+    height:70px;
+    width:68px;
     padding-bottom: 0.6px;
     opacity: 0.9;
-    z-index:10;
-
+    z-index:5;
   }
+
+#welcome{
+  font-family: "BEBAS___";
+  font-size: 40px;
+  align-self: center;
+  color: #ffffff;
+}
+#form{
+  width:497px;;
+  height:110%;
+  background-color: rgb(0,0,0,0.7);
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  padding-bottom: 30px;
+}
+
+input{
+  margin: 10px;
+  width: 60%;
+  height:20px;
+  border:none;
+  padding:2px;
+  background-color:  rgb(255, 253, 252, 0.73);
+  border-radius: 5px;
+}
+
+
+
+
+
+.box-3 {
+  background-color: rgb(30, 25, 22,0.6);
+	width: 250px;
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+.btn-three {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+}
+.btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.1);
+	transition: all 0.3s;
+}
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(255,255,255,0.5);
+	transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+button{
+  background-color: rgb(0,0,0,0);
+  border: none;
+  color:#ffffff;
+  font-family:sans-serif;
+}
