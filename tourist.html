@@ -17,32 +17,51 @@
           <center>
           <p id="welcome"> WELCOME </p>
           <pre id="welcome" style="font-size:20px;margin-top: -20px;">Please    enter    tour    details:</pre>
-
           <div id="form">
-            <br><br>
+            <form>
+
             <center><br>
+                <p> Book tickets</p>
             Name : <input type="text" name= "Tname" ><br><br>
             Number of people : <input type="number" name="NumOfPeople" ><br><br>
             Entry Date : <input type="date" name="date"><br><br>
             Exit Date : <input type="date" name="date"><br><br>
 
-            <br><br>
             Package :<select name="package">
               <option value="platinum">Platinum</option>
               <option value="gold">Gold</option>
               <option value="silver">Silver</option>
               <option value="regular">Regular</option>
-            </select><br><br><br><br>
+            </select><br><br>
+            <div class="box-3">
+                <div class="btn btn-three">
+
+                    <input type="submit" id="viewticket" value="CONFIRM BOOKING"/>
+                  </div>
+            </div>
+
+          </center>
+
+        </form>
+        <form action="/viewticket" method="get">
+            <br>
+            <p> View Ticket details </p>
+            Name : <input type="text" name= "Tname" ><br><br>
+
+            Entry Date : <input type="date" name="date"><br><br>
+            Exit Date : <input type="date" name="date"><br><br>
 
 
             <div class="box-3">
                 <div class="btn btn-three">
-                    <button>CONFIRM REGISTRATION</button>
+                <input type="submit" id="viewticket" value="VIEW TICKET"/>
                   </div>
             </div>
 
           </center>
           </div>
+      </form>
+      </div>
 
           </center>
 
