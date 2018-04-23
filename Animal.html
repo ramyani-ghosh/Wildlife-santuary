@@ -17,34 +17,40 @@
           <center>
           <p id="welcome"> WELCOME </p>
           <pre id="welcome" style="font-size:20px;margin-top: -20px;">Please    enter    details:</pre>
+          <form action ="/addanimal" method="get">
+              <div id="form">
+                <br>
+                <center>
+                <p> Add Animal </p>
+                Species: <input type="text" name= "species" ><br><br>
+                Name : <input type="text" name= "name" ><br><br>
+                Zone pin : <input type="text" name= "zone_pin" ><br><br>
+                Gender : <select name="gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select><br><br><br>
 
-          <div id="form">
-            <br>
-            <center>
-            <p> Add Animal </p>
-            Species: <input type="text" name= "species" ><br><br>
-            Name : <input type="text" name= "Aname" ><br><br>
-            Zone pin : <input type="text" name= "z_pin" ><br><br>
+                <div class="box-3">
+                    <div class="btn btn-three">
+                         <input type="submit" id="addanimal" value="ADD ANIMAL"/>
+                      </div>
+                </div>
+            </form>
+            <form action="/viewanimal" method="get">
+                <br>
+                <p> View Animal </p>
+                Species: <input type="text" name= "species" ><br><br>
+                Name : <input type="text" name= "Aname" ><br><br>
+                </select>
+                <div class="box-3">
+                    <div class="btn btn-three">
+                        <input type="submit" id="addanimal" value="VIEW ANIMAL"/>
+                      </div>
+                </div>
 
-            <div class="box-3">
-                <div class="btn btn-three">
-                    <button id="addanimal">ADD ANIMAL</button>
-                  </div>
-            </div>
-            <br>
-            <p> View Animal </p>
-            Species: <input type="text" name= "species" ><br><br>
-            Name : <input type="text" name= "Aname" ><br><br>
-            </select>
-            <div class="box-3">
-                <div class="btn btn-three">
-                    <button id="viewanimal">VIEW ANIMAL</button>
-                  </div>
-            </div>
-
-          </center>
-          </div>
-
+              </center>
+              </div>
+          </form>
           </center>
 
   </body>
